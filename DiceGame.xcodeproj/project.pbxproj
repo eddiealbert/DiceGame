@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE3BD7AF1BFA910100AEF3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7AE1BFA910100AEF3AE /* Foundation.framework */; };
+		CE3BD7B11BFA910100AEF3AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7B01BFA910100AEF3AE /* CoreGraphics.framework */; };
+		CE3BD7B31BFA910100AEF3AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7B21BFA910100AEF3AE /* UIKit.framework */; };
+		CE3BD7B91BFA910100AEF3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3BD7B71BFA910100AEF3AE /* InfoPlist.strings */; };
+		CE3BD7BB1BFA910100AEF3AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7BA1BFA910100AEF3AE /* main.m */; };
+		CE3BD7BF1BFA910100AEF3AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7BE1BFA910100AEF3AE /* AppDelegate.m */; };
+		CE3BD7C21BFA910100AEF3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3BD7C01BFA910100AEF3AE /* Main.storyboard */; };
+		CE3BD7C51BFA910100AEF3AE /* TwoDiceGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7C41BFA910100AEF3AE /* TwoDiceGameViewController.m */; };
+		CE3BD7C71BFA910100AEF3AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3BD7C61BFA910100AEF3AE /* Images.xcassets */; };
+		CE3BD7CE1BFA910100AEF3AE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7CD1BFA910100AEF3AE /* XCTest.framework */; };
+		CE3BD7CF1BFA910100AEF3AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7AE1BFA910100AEF3AE /* Foundation.framework */; };
+		CE3BD7D01BFA910100AEF3AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3BD7B21BFA910100AEF3AE /* UIKit.framework */; };
+		CE3BD7D81BFA910100AEF3AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3BD7D61BFA910100AEF3AE /* InfoPlist.strings */; };
+		CE3BD7DA1BFA910100AEF3AE /* DiceGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7D91BFA910100AEF3AE /* DiceGameTests.m */; };
+		CE3BD7E51BFA95BC00AEF3AE /* Die.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7E41BFA95BC00AEF3AE /* Die.m */; };
+		CE3BD7E91BFA98CF00AEF3AE /* FourDiceGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7E81BFA98CF00AEF3AE /* FourDiceGameViewController.m */; };
+		CE3BD7EC1BFA98F000AEF3AE /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7EB1BFA98F000AEF3AE /* HistoryViewController.m */; };
+		CE3BD7EF1BFA993300AEF3AE /* RollDiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7EE1BFA993300AEF3AE /* RollDiceViewController.m */; };
+		CE3BD7F21BFA996500AEF3AE /* DieGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3BD7F11BFA996500AEF3AE /* DieGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE3BD7D11BFA910100AEF3AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3BD7A31BFA910100AEF3AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3BD7AA1BFA910100AEF3AE;
+			remoteInfo = DiceGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE3BD7AB1BFA910100AEF3AE /* DiceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3BD7AE1BFA910100AEF3AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE3BD7B01BFA910100AEF3AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE3BD7B21BFA910100AEF3AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE3BD7B61BFA910100AEF3AE /* DiceGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceGame-Info.plist"; sourceTree = "<group>"; };
+		CE3BD7B81BFA910100AEF3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE3BD7BA1BFA910100AEF3AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE3BD7BC1BFA910100AEF3AE /* DiceGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiceGame-Prefix.pch"; sourceTree = "<group>"; };
+		CE3BD7BD1BFA910100AEF3AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE3BD7BE1BFA910100AEF3AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE3BD7C11BFA910100AEF3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE3BD7C31BFA910100AEF3AE /* TwoDiceGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoDiceGameViewController.h; sourceTree = "<group>"; };
+		CE3BD7C41BFA910100AEF3AE /* TwoDiceGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoDiceGameViewController.m; sourceTree = "<group>"; };
+		CE3BD7C61BFA910100AEF3AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE3BD7CC1BFA910100AEF3AE /* DiceGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3BD7CD1BFA910100AEF3AE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE3BD7D51BFA910100AEF3AE /* DiceGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DiceGameTests-Info.plist"; sourceTree = "<group>"; };
+		CE3BD7D71BFA910100AEF3AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE3BD7D91BFA910100AEF3AE /* DiceGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceGameTests.m; sourceTree = "<group>"; };
+		CE3BD7E31BFA95BC00AEF3AE /* Die.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Die.h; sourceTree = "<group>"; };
+		CE3BD7E41BFA95BC00AEF3AE /* Die.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Die.m; sourceTree = "<group>"; };
+		CE3BD7E71BFA98CF00AEF3AE /* FourDiceGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourDiceGameViewController.h; sourceTree = "<group>"; };
+		CE3BD7E81BFA98CF00AEF3AE /* FourDiceGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourDiceGameViewController.m; sourceTree = "<group>"; };
+		CE3BD7EA1BFA98F000AEF3AE /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		CE3BD7EB1BFA98F000AEF3AE /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		CE3BD7ED1BFA993300AEF3AE /* RollDiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollDiceViewController.h; sourceTree = "<group>"; };
+		CE3BD7EE1BFA993300AEF3AE /* RollDiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollDiceViewController.m; sourceTree = "<group>"; };
+		CE3BD7F01BFA996500AEF3AE /* DieGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieGame.h; sourceTree = "<group>"; };
+		CE3BD7F11BFA996500AEF3AE /* DieGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE3BD7A81BFA910100AEF3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7B11BFA910100AEF3AE /* CoreGraphics.framework in Frameworks */,
+				CE3BD7B31BFA910100AEF3AE /* UIKit.framework in Frameworks */,
+				CE3BD7AF1BFA910100AEF3AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BD7C91BFA910100AEF3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7CE1BFA910100AEF3AE /* XCTest.framework in Frameworks */,
+				CE3BD7D01BFA910100AEF3AE /* UIKit.framework in Frameworks */,
+				CE3BD7CF1BFA910100AEF3AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE3BD7A21BFA910100AEF3AE = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7B41BFA910100AEF3AE /* DiceGame */,
+				CE3BD7D31BFA910100AEF3AE /* DiceGameTests */,
+				CE3BD7AD1BFA910100AEF3AE /* Frameworks */,
+				CE3BD7AC1BFA910100AEF3AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE3BD7AC1BFA910100AEF3AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7AB1BFA910100AEF3AE /* DiceGame.app */,
+				CE3BD7CC1BFA910100AEF3AE /* DiceGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE3BD7AD1BFA910100AEF3AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7AE1BFA910100AEF3AE /* Foundation.framework */,
+				CE3BD7B01BFA910100AEF3AE /* CoreGraphics.framework */,
+				CE3BD7B21BFA910100AEF3AE /* UIKit.framework */,
+				CE3BD7CD1BFA910100AEF3AE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3BD7B41BFA910100AEF3AE /* DiceGame */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7C01BFA910100AEF3AE /* Main.storyboard */,
+				CE3BD7E61BFA95D200AEF3AE /* Models */,
+				CE3BD7C31BFA910100AEF3AE /* TwoDiceGameViewController.h */,
+				CE3BD7C41BFA910100AEF3AE /* TwoDiceGameViewController.m */,
+				CE3BD7E71BFA98CF00AEF3AE /* FourDiceGameViewController.h */,
+				CE3BD7E81BFA98CF00AEF3AE /* FourDiceGameViewController.m */,
+				CE3BD7EA1BFA98F000AEF3AE /* HistoryViewController.h */,
+				CE3BD7EB1BFA98F000AEF3AE /* HistoryViewController.m */,
+				CE3BD7ED1BFA993300AEF3AE /* RollDiceViewController.h */,
+				CE3BD7EE1BFA993300AEF3AE /* RollDiceViewController.m */,
+				CE3BD7C61BFA910100AEF3AE /* Images.xcassets */,
+				CE3BD7B51BFA910100AEF3AE /* Supporting Files */,
+			);
+			path = DiceGame;
+			sourceTree = "<group>";
+		};
+		CE3BD7B51BFA910100AEF3AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7BD1BFA910100AEF3AE /* AppDelegate.h */,
+				CE3BD7BE1BFA910100AEF3AE /* AppDelegate.m */,
+				CE3BD7B61BFA910100AEF3AE /* DiceGame-Info.plist */,
+				CE3BD7B71BFA910100AEF3AE /* InfoPlist.strings */,
+				CE3BD7BA1BFA910100AEF3AE /* main.m */,
+				CE3BD7BC1BFA910100AEF3AE /* DiceGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE3BD7D31BFA910100AEF3AE /* DiceGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7D91BFA910100AEF3AE /* DiceGameTests.m */,
+				CE3BD7D41BFA910100AEF3AE /* Supporting Files */,
+			);
+			path = DiceGameTests;
+			sourceTree = "<group>";
+		};
+		CE3BD7D41BFA910100AEF3AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7D51BFA910100AEF3AE /* DiceGameTests-Info.plist */,
+				CE3BD7D61BFA910100AEF3AE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE3BD7E61BFA95D200AEF3AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE3BD7E41BFA95BC00AEF3AE /* Die.m */,
+				CE3BD7E31BFA95BC00AEF3AE /* Die.h */,
+				CE3BD7F01BFA996500AEF3AE /* DieGame.h */,
+				CE3BD7F11BFA996500AEF3AE /* DieGame.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE3BD7AA1BFA910100AEF3AE /* DiceGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3BD7DD1BFA910100AEF3AE /* Build configuration list for PBXNativeTarget "DiceGame" */;
+			buildPhases = (
+				CE3BD7A71BFA910100AEF3AE /* Sources */,
+				CE3BD7A81BFA910100AEF3AE /* Frameworks */,
+				CE3BD7A91BFA910100AEF3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiceGame;
+			productName = DiceGame;
+			productReference = CE3BD7AB1BFA910100AEF3AE /* DiceGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE3BD7CB1BFA910100AEF3AE /* DiceGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3BD7E01BFA910100AEF3AE /* Build configuration list for PBXNativeTarget "DiceGameTests" */;
+			buildPhases = (
+				CE3BD7C81BFA910100AEF3AE /* Sources */,
+				CE3BD7C91BFA910100AEF3AE /* Frameworks */,
+				CE3BD7CA1BFA910100AEF3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE3BD7D21BFA910100AEF3AE /* PBXTargetDependency */,
+			);
+			name = DiceGameTests;
+			productName = DiceGameTests;
+			productReference = CE3BD7CC1BFA910100AEF3AE /* DiceGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE3BD7A31BFA910100AEF3AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Lehman College";
+				TargetAttributes = {
+					CE3BD7CB1BFA910100AEF3AE = {
+						TestTargetID = CE3BD7AA1BFA910100AEF3AE;
+					};
+				};
+			};
+			buildConfigurationList = CE3BD7A61BFA910100AEF3AE /* Build configuration list for PBXProject "DiceGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE3BD7A21BFA910100AEF3AE;
+			productRefGroup = CE3BD7AC1BFA910100AEF3AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE3BD7AA1BFA910100AEF3AE /* DiceGame */,
+				CE3BD7CB1BFA910100AEF3AE /* DiceGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3BD7A91BFA910100AEF3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7C71BFA910100AEF3AE /* Images.xcassets in Resources */,
+				CE3BD7B91BFA910100AEF3AE /* InfoPlist.strings in Resources */,
+				CE3BD7C21BFA910100AEF3AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BD7CA1BFA910100AEF3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7D81BFA910100AEF3AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE3BD7A71BFA910100AEF3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7F21BFA996500AEF3AE /* DieGame.m in Sources */,
+				CE3BD7EF1BFA993300AEF3AE /* RollDiceViewController.m in Sources */,
+				CE3BD7C51BFA910100AEF3AE /* TwoDiceGameViewController.m in Sources */,
+				CE3BD7BF1BFA910100AEF3AE /* AppDelegate.m in Sources */,
+				CE3BD7E91BFA98CF00AEF3AE /* FourDiceGameViewController.m in Sources */,
+				CE3BD7E51BFA95BC00AEF3AE /* Die.m in Sources */,
+				CE3BD7BB1BFA910100AEF3AE /* main.m in Sources */,
+				CE3BD7EC1BFA98F000AEF3AE /* HistoryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3BD7C81BFA910100AEF3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3BD7DA1BFA910100AEF3AE /* DiceGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3BD7D21BFA910100AEF3AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3BD7AA1BFA910100AEF3AE /* DiceGame */;
+			targetProxy = CE3BD7D11BFA910100AEF3AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE3BD7B71BFA910100AEF3AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3BD7B81BFA910100AEF3AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE3BD7C01BFA910100AEF3AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3BD7C11BFA910100AEF3AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE3BD7D61BFA910100AEF3AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3BD7D71BFA910100AEF3AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE3BD7DB1BFA910100AEF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE3BD7DC1BFA910100AEF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE3BD7DE1BFA910100AEF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiceGame/DiceGame-Prefix.pch";
+				INFOPLIST_FILE = "DiceGame/DiceGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE3BD7DF1BFA910100AEF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiceGame/DiceGame-Prefix.pch";
+				INFOPLIST_FILE = "DiceGame/DiceGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE3BD7E11BFA910100AEF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiceGame.app/DiceGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiceGame/DiceGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DiceGameTests/DiceGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CE3BD7E21BFA910100AEF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DiceGame.app/DiceGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DiceGame/DiceGame-Prefix.pch";
+				INFOPLIST_FILE = "DiceGameTests/DiceGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3BD7A61BFA910100AEF3AE /* Build configuration list for PBXProject "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BD7DB1BFA910100AEF3AE /* Debug */,
+				CE3BD7DC1BFA910100AEF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3BD7DD1BFA910100AEF3AE /* Build configuration list for PBXNativeTarget "DiceGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BD7DE1BFA910100AEF3AE /* Debug */,
+				CE3BD7DF1BFA910100AEF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE3BD7E01BFA910100AEF3AE /* Build configuration list for PBXNativeTarget "DiceGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3BD7E11BFA910100AEF3AE /* Debug */,
+				CE3BD7E21BFA910100AEF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE3BD7A31BFA910100AEF3AE /* Project object */;
+}
